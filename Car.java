@@ -1,10 +1,10 @@
 import java.util.ArrayList;
 public class Car {
     /*integer to store the car's capacity */
-    int capacity;
+    private int capacity;
 
     /*arraylist to store the current passengers in the car */
-    ArrayList<String> current_passengers = new ArrayList<String>(capacity);
+    private ArrayList<String> current_passengers = new ArrayList<String>(capacity);
 
     /* constructor for the car
     * @param integer of car's capacity
@@ -39,7 +39,7 @@ public class Car {
     public Boolean addPassenger(Passenger p) {
         if (current_passengers.size() < this.capacity) {
           String new_passenger = p.getName();
-            if (this.current_passengers.indexOf(new_passenger) == -1) {
+            if (this.current_passengers.contains(new_passenger)) {
                 this.current_passengers.add(new_passenger);
                 return true;
             } else {

@@ -2,7 +2,7 @@ import java.util.ArrayList;
 public class Train {
 
      /*arraylist to store the cars attatched */
-     ArrayList<Car> train_cars = new ArrayList<Car>();
+     private ArrayList<Car> train_cars = new ArrayList<Car>();
 
      /*declaring engine for train */
      Engine myEngine;
@@ -85,29 +85,29 @@ public class Train {
 
      public static void main(String[] args) {
         //test code
-        // Train myTrain = new Train(FuelType.ELECTRIC, 30.00, 3, 15);
-        // myTrain.myEngine.refuel();
-        // myTrain.myEngine.go();
+        Train myTrain = new Train(FuelType.ELECTRIC, 30.00, 3, 15);
+        myTrain.myEngine.refuel();
+        myTrain.myEngine.go();
 
-        // Passenger pass1 = new Passenger("Simone");
-        // Passenger pass2 = new Passenger("Mazzy");
-        // Passenger pass3 = new Passenger("Bert");
-        // Passenger pass4 = new Passenger("Herb");
-        // Passenger pass5 = new Passenger("George");
-        // Passenger pass6 = new Passenger("Ketone");
+        Passenger pass1 = new Passenger("Simone");
+        Passenger pass2 = new Passenger("Mazzy");
+        Passenger pass3 = new Passenger("Bert");
+        Passenger pass4 = new Passenger("Herb");
+        Passenger pass5 = new Passenger("George");
+        Passenger pass6 = new Passenger("Ketone");
 
-        // myTrain.train_cars.get(0).addPassenger(pass1);
-        // myTrain.train_cars.get(0).addPassenger(pass2);
-        // myTrain.train_cars.get(0).addPassenger(pass3);
-        // myTrain.train_cars.get(1).addPassenger(pass4);
-        // myTrain.train_cars.get(1).addPassenger(pass5);
-        // myTrain.train_cars.get(2).addPassenger(pass6);
+        myTrain.train_cars.get(0).addPassenger(pass1);
+        myTrain.train_cars.get(0).addPassenger(pass2);
+        myTrain.train_cars.get(0).addPassenger(pass3);
+        myTrain.train_cars.get(1).addPassenger(pass4);
+        myTrain.train_cars.get(1).addPassenger(pass5);
+        myTrain.train_cars.get(2).addPassenger(pass6);
 
-        // System.out.println("seats remaining: " + myTrain.seatsRemaining());
-        // myTrain.printManifest();
+        System.out.println("seats remaining: " + myTrain.seatsRemaining());
+        myTrain.printManifest();
 
-        // myTrain.train_cars.get(0).removePassenger(pass1);
-        // myTrain.train_cars.get(0).printManifest();
+        myTrain.train_cars.get(0).removePassenger(pass1);
+        myTrain.train_cars.get(0).printManifest();
      }
 
 }
