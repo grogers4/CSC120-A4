@@ -6,7 +6,7 @@ public class Car {
     /*arraylist to store the current passengers in the car */
     private ArrayList<String> current_passengers = new ArrayList<String>(capacity);
 
-    /* constructor for the car
+    /** constructor for the car
     * @param integer of car's capacity
      */
     public Car(int c) {
@@ -14,7 +14,7 @@ public class Car {
         current_passengers = new ArrayList<String>(capacity);
     }
 
-    /*get capacity method
+    /** get capacity method
      * no parameters
      * @returns car's maximum capacity
      */
@@ -22,7 +22,7 @@ public class Car {
         return this.capacity;
     }
 
-    /*get remaining seats method
+    /** get remaining seats method
      * no parameters
      * @returns int of number of car's remaining seats
      */
@@ -32,7 +32,7 @@ public class Car {
         return seats_remaining;
     }
 
-    /*add passenger method
+    /** add passenger method
      * @param of Passenger
      * @returns Boolean true if operation successful
      */
@@ -53,7 +53,7 @@ public class Car {
         
     }
 
-    /*remove passenger method
+    /** remove passenger method
      * @param of Passenger to be removed
      * @returns Boolean true if operation successful
      */
@@ -68,7 +68,7 @@ public class Car {
         }
     }
 
-    /*print manifest method
+    /** print manifest method
      * no parameters
      * prints manifest of passengers on board
      */
